@@ -8243,7 +8243,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .img {
       width: 100%;
       display: block;
-      height: 250px;
+      height: auto;
       margin-bottom: 20px; }
     .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .text h3 {
       font-size: 16px;

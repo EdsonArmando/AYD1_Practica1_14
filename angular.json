@@ -29,7 +29,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/CSS/js/jquery.min.js",
+              "src/assets/CSS/js/popper.js",
+              "src/assets/CSS/js/bootstrap.min.js",
+              "src/assets/CSS/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
