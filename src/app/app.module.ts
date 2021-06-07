@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { TopBarComponent } from './components/top-bar/top-bar.component'
 import {ReactiveFormsModule} from "@angular/forms";
+import { DatosComponent } from './datos/datos.component';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent
+    TopBarComponent,
+    DatosComponent,
+    BienvenidaComponent
   ],
   imports: [
     BrowserModule,
