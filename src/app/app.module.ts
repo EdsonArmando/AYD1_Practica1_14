@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { DatosComponent } from './datos/datos.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { AgregarestudianteComponent } from './agregarestudiante/agregarestudiante.component';
+import {ListaEstudianteComponent} from "./ListaEstudiantes/listaEstudiante.component";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AgregarestudianteComponent } from './agregarestudiante/agregarestudiant
     TopBarComponent,
     DatosComponent,
     BienvenidaComponent,
-    AgregarestudianteComponent
+    AgregarestudianteComponent,
+      ListaEstudianteComponent
   ],
   imports: [
     BrowserModule,

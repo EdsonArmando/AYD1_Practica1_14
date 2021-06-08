@@ -1,6 +1,8 @@
 import { HttpClient, HttpResponse, HttpHeaders, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import {Observable} from "rxjs";
 
+const endpointMongo = 'http://localhost:3000/';
 @Injectable({
   providedIn: 'root'
 })
@@ -21,5 +23,7 @@ if(resp["status"] == true){ alert("Estudiante agregado con exito");}
     });
    });
 }
-
+public getEstudiantes(): Observable<any>{
+    return this.httpClient.get(endpointMongo + 'estudiantes');
+}
 }

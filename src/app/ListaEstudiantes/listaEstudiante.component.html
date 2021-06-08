@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Estudiantes</h2>
+    <table>
+        <tr>
+            <th>DPI</th>
+            <th>CARNE</th>
+            <th>NOMBRES</th>
+            <th>APELLIDO</th>
+            <th>NACIONALIDAD</th>
+            <th>SEXO</th>
+            <th>IDENTIDAD_RACIAL</th>
+            <th>FACULTAD</th>
+            <th>CARRERA</th>
+        </tr>
+        <tr *ngFor="let dat of data">
+            <td>{{dat.DPI}}</td>
+            <td>{{dat.CARNE}}</td>
+            <td>{{dat.NOMBRES}}</td>
+            <td>{{dat.APELLIDO}}</td>
+            <td>{{dat.NACIONALIDAD}}</td>
+            <td>{{dat.SEXO}}</td>
+            <td>{{dat.IDENTIDADRACIAL}}</td>
+            <td>{{dat.FACULTAD}}</td>
+            <td>{{dat.CARRERA}}</td>
+        </tr>
+    </table>
+</div>
+
