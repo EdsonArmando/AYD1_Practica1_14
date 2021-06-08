@@ -2,6 +2,8 @@
 Estilos
  */
 @import "./assets/CSS/css/style.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
