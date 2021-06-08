@@ -10,6 +10,8 @@ export class EstudiantesService {
 
   constructor(private httpClient: HttpClient) { }
 
+  urlserver = "http://localhost:3000"
+
 addEstudiante(estudiante:any){
 return new Promise<void>((resolve, reject) => {
     this.httpClient.post('http://localhost:3000' +'/estudiante', estudiante).subscribe((resp: any) => {
@@ -25,5 +27,17 @@ if(resp["status"] == true){ alert("Estudiante agregado con exito");}
 }
 public getEstudiantes(): Observable<any>{
     return this.httpClient.get(endpointMongo + 'estudiantes');
+}
+
+editarEstudiante(estudiante : any){
+  this.httpClient.post(this.urlserver + "/actualizarestudiante", estudiante).subscribe(data => {
+    console.log(data)
+  })
+}
+
+eliminarestudiante(estudiante : any){
+  this.httpClient.delete(this.urlserver + "/borrarestudiante", estudiante).subscribe(data => {
+    console.log(data)
+  })
 }
 }

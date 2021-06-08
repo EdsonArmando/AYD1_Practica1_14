@@ -1,0 +1,20 @@
+<h1>Datos</h1>
+<div mat-dialog-content>
+    <label for="txtcarne">Carne</label>
+    <input type="text" name="carne" class="form-control" id="txtcarne" placeholder="CARNE" required [(ngModel)] = "carnet">
+    <label for="txtnombre">Nombres</label>
+    <input type="text" name="nombre" class="form-control" id="txtnombre" placeholder="NOMBRES" required [(ngModel)]="nombre">
+    <label for="txtapellido">Apellido</label>
+    <input type="text" name="apellido" class="form-control" id="txtapellido" placeholder="APELLIDO" required [(ngModel)]="apellido">
+    <label for="txtnacionalidad">Nacionalidad</label>
+    <input type="text" name="nacionalidad" class="form-control" id="txtnacionalidad" placeholder="NACIONALIDAD" required [(ngModel)]="nacionalidad">
+    <label for="txtidenditad">Sexo</label>
+    <input type="text" name="identidad" class="form-control" id="txtidenditad" placeholder="IDENTIDAD RACIAL" required [(ngModel)]="identidad_racial">
+    <label for="txtfacultad">Facultad</label>
+    <input type="text" name="facultad" class="form-control" id="txtfacultad" placeholder="FACULTAD" required [(ngModel)]="facultad">
+    <label for="txtcarrera">Carrera</label>
+    <input type="text" name="carrera" class="form-control" id="txtcarrera" placeholder="CARRERA" required [(ngModel)]="carrera">
+</div>
+<div mat-dialog-actions>
+  <button class="btn btn-primary" (click)="actualizar()">Editar</button>
+</div>

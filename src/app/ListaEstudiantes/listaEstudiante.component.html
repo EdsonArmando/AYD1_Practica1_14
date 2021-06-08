@@ -11,6 +11,7 @@
             <th>IDENTIDAD_RACIAL</th>
             <th>FACULTAD</th>
             <th>CARRERA</th>
+            <th>OPERACIONES</th>
         </tr>
         <tr *ngFor="let dat of data">
             <td>{{dat.DPI}}</td>
@@ -22,6 +23,11 @@
             <td>{{dat.IDENTIDADRACIAL}}</td>
             <td>{{dat.FACULTAD}}</td>
             <td>{{dat.CARRERA}}</td>
+            <td>
+                <button class="btn btn-success" (click)="openDialog($event, dat)">Editar</button>
+                &nbsp;
+                <button class="btn btn-danger" (click)="eliminar($event, dat)">Eliminar</button>
+            </td>
         </tr>
     </table>
 </div>

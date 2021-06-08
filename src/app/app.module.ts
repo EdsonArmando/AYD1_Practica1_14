@@ -9,6 +9,10 @@ import { DatosComponent } from './datos/datos.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { AgregarestudianteComponent } from './agregarestudiante/agregarestudiante.component';
 import {ListaEstudianteComponent} from "./ListaEstudiantes/listaEstudiante.component";
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopupdatosComponent } from './components/popupdatos/popupdatos.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -17,15 +21,20 @@ import {ListaEstudianteComponent} from "./ListaEstudiantes/listaEstudiante.compo
     DatosComponent,
     BienvenidaComponent,
     AgregarestudianteComponent,
-      ListaEstudianteComponent
+      ListaEstudianteComponent,
+      PopupdatosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
+  entryComponents: [PopupdatosComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
