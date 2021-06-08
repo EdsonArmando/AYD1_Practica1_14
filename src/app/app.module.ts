@@ -7,13 +7,15 @@ import { TopBarComponent } from './components/top-bar/top-bar.component'
 import {ReactiveFormsModule} from "@angular/forms";
 import { DatosComponent } from './datos/datos.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { AgregarestudianteComponent } from './agregarestudiante/agregarestudiante.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     DatosComponent,
-    BienvenidaComponent
+    BienvenidaComponent,
+    AgregarestudianteComponent
   ],
   imports: [
     BrowserModule,
