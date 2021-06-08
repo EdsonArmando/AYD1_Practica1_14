@@ -17,9 +17,9 @@ mongoose.connect(mongodbURL, { useNewUrlParser: true, useUnifiedTopology: true }
         console.error(err);
     });
 
-app.get('/estudiante', async(req, res) => {
+app.get('/estudiantes', async(req, res) => {
     const response = await Estudiantes.find({});
-    res.json({ listaUsuarios: response });
+    res.json({ listaEstudiantes: response });
 });
 
 app.post('/estudiante', async(req, res) => {
