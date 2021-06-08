@@ -53,6 +53,42 @@ app.post('/estudiante', async(req, res) => {
     }
 })
 
+app.post('/actualizarestudiante', async(req, res) => {
+    let data = req.body
+
+    const response = await Estudiantes.updateOne({ DPI : data.DPI }, data)
+    if (response.nModified == 1){
+        res.json({
+            status: true,
+            msg: "Estudiante modificado"
+        })
+    }else{
+        res.json({
+            status: false,
+            msg: "Estudiante no modificado"
+        })
+    }
+})
+
+app.delete('/borrarestudiante', async(req, res) => {
+    let data =req.body
+
+    const response = await Estudiantes.find({});
+    console.log(response)
+    console.log(data)
+
+    Estudiantes.deleteOne({ DPI : data.DPI})
+    .then(response => {
+        res.json({
+            status : true
+        })
+    } )
+    .catch(error => {
+        res.json({
+            status : false
+        })
+    })
+})
 
 if (process.env.NODE_ENV === 'test') {
     port = 3000;
